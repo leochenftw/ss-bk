@@ -21,7 +21,7 @@
 		"heyday/silverstripe-dataobjectpreview": "~1.0.2",
 		"normann/gridfieldpaginatorwithshowall": "dev-master",
 		"undefinedoffset/sortablegridfield": "~0.6.1",
-		"salted-herring/image-orientation-fixer": "~1.0",
+		"salted-herring/image-orientation-fixer": "~1.0.0",
 		"salted-herring/salted-library": "~0.0.7",
 		"thisisbd/silverstripe-maintenance-mode": "1.0.5",
 		"salted-herring/salted-cropper": "~1.0.1"
