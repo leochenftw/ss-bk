@@ -6,6 +6,8 @@ $project = 'mainsite';
 global $database;
 $database = SS_DATABASE_NAME;
 
+Email::mailer()->setMessageEncoding('base64');
+
 // Use _ss_environment.php file for configuration
 require_once("conf/ConfigureFromEnv.php");
 
@@ -21,7 +23,7 @@ if (extension_loaded('imagick')) {
 Requirements::set_write_js_to_body(false);
 
 if (Director::isLive()) {
-	SS_Log::add_writer(new SS_LogEmailWriter('administration@saltedherring.com'), SS_Log::ERR);
+	SS_Log::add_writer(new SS_LogEmailWriter('leochenftw@gmail.com'), SS_Log::ERR);
 }
 
 if(class_exists('Memcache')){
