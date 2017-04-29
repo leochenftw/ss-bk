@@ -1,0 +1,87 @@
+fieldset {
+    border: none;
+}
+
+label {
+    @extend .label;
+}
+
+input.text {
+    @extend .input;
+}
+
+input.action {
+    @extend .button;
+}
+
+.is-maxheight {
+    height: 100%;
+}
+
+.is-absolute {
+    position: absolute;
+}
+
+.is-relative {
+    position: relative;
+}
+
+.icon {
+    width: auto;
+}
+
+.hide {
+    display: none !important;
+}
+
+.is-uppercase {
+    text-transform: uppercase;
+}
+
+.has-text-uppercase {
+    text-transform: uppercase;
+}
+
+.has-text-lowercase {
+    text-transform: lowercase;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    &.is-bold {
+        font-weight: bold;
+    }
+}
+
+.columns {
+    .space-between {
+        @include justify-content(space-between);
+    }
+
+    .vertical-bottom {
+        @include align-items(flex-end);
+    }
+
+    .column {
+        &.is-auto-width {
+            width: auto;
+            @include flex(none);
+        }
+    }
+}
+
+div.field.textarea {
+    max-height: none;
+    max-width: none;
+    min-height: 0;
+    min-width: 0;
+    padding: inherit;
+    position: relative;
+    vertical-align: top;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    box-shadow: none;
+    font-size: inherit;
+    height: auto;
+    border-radius: 0;
+}
