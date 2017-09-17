@@ -62,3 +62,4 @@ composer.lock
 salted-email/
 display_logic/
 linkable/
+silverstripe-rest-api/
