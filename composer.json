@@ -10,7 +10,6 @@
 		"silverstripe/googlesitemaps": "~1.2.2",
 		"silverstripe/html5": "~1.0.2",
 		"silverstripe-australia/gridfieldextensions": "~1.3.0",
-		"silverstripe/staticpublisher": "~1.0.0",
 		"silverstripe/lumberjack": "~1.1",
 		"silverstripe/tagfield": "~1.2",
 
@@ -22,10 +21,13 @@
 		"normann/gridfieldpaginatorwithshowall": "dev-master",
 		"undefinedoffset/sortablegridfield": "~0.6.1",
 		"salted-herring/image-orientation-fixer": "~1.0.0",
-		"salted-herring/salted-library": "~0.0.7",
+		"salted-herring/salted-library": "dev-master",
 		"thisisbd/silverstripe-maintenance-mode": "1.0.5",
 		"salted-herring/salted-cropper": "~1.0.1",
-        "sheadawson/silverstripe-linkable": "^1.3"
+        "sheadawson/silverstripe-linkable": "~1.3.7",
+        "ntb/silverstripe-rest-api": "~1.0",
+        "cocur/slugify": "~2.4",
+        "salted-herring/salted-email": "dev-master"
 	},
 	"require-dev": {
     	"phpunit/phpunit": "3.7.*"
