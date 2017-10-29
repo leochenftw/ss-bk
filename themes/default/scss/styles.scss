@@ -14,8 +14,7 @@
 @import 'config/colours';
 
 @import "bulma/bulma";
-
-// @import 'config/ss-shim';
+@import 'config/bulma-shim';
 
 // @include retina-sprite-add(spritesheet, 'sprites/*.png', 'retina_sprites/*.png');
 

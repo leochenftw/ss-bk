@@ -33,6 +33,7 @@ class Page_Controller extends ContentController {
         parent::init();
 
         Requirements::block(THIRDPARTY_DIR . '/jquery/jquery.js');
+        Requirements::block(SALTEDCROPPER_PATH . '/css/salted-cropper.css');
         Requirements::block("framework/javascript/ConfirmedPasswordField.js");
         Requirements::block("framework/css/ConfirmedPasswordField.css");
 
