@@ -26,7 +26,7 @@ if (Director::isLive()) {
     SS_Log::add_writer(new SS_LogEmailWriter('leochenftw@gmail.com'), SS_Log::ERR);
 }
 
-if(class_exists('Memcache')){
+if(class_exists('Memcache')) {
     SS_Cache::add_backend(
         'primary_memcached',
         'Memcached',
