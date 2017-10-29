@@ -1,4 +1,10 @@
 $(document).ready(function(e)
 {
-    console.log('ready');
+    $('#btn-mobile-menu').click(function(e)
+    {
+        e.preventDefault();
+        var target  =   $('#' + $(this).data('target'));
+        target.animate({height: 'toggle'});
+        $(this).toggleClass('is-active');
+    });
 });

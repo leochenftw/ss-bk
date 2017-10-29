@@ -13,9 +13,7 @@ var sassOptions = {
   outputStyle: 'expanded',
   importer: moduleImporter(),
   includePaths: [
-      './node_modules/breakpoint-sass/stylesheets',
-      './js/components/compass-h5bp/stylesheets',
-      './node_modules/susy/sass/susy'
+      './js/components/compass-h5bp/stylesheets'
   ]
 };
 
@@ -24,9 +22,7 @@ var sassOptionsProduction = {
   outputStyle: 'compressed',
   importer: moduleImporter(),
   includePaths: [
-      './node_modules/breakpoint-sass/stylesheets',
-      './js/components/compass-h5bp/stylesheets',
-      './node_modules/susy/sass/susy'
+      './js/components/compass-h5bp/stylesheets'
   ]
 };
 
