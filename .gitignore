@@ -9,7 +9,6 @@ silverstripe-cache
 .DS_Store
 .svn
 .tgz
-.htaccess
 themes/*/.sass-cache
 themes/*/js/components
 themes/*/node_modules
@@ -48,7 +47,6 @@ reports
 siteconfig
 tagfield
 lumberjack/
-.htaccess
 silverstripe-block/
 var/
 silverstripe-standard-permissions/
