@@ -1,5 +1,5 @@
-# Umbrellar Veeam page
-Campaign page for Veeam
+# Preparation
+Things to do before start cracking
 
 ---
 
@@ -11,6 +11,14 @@ Make sure you instlal the required npm components
 
 `npm install`
 
+`bower update`
+
+and don't forget to go to scss directory, and
+`git clone git@github.com:leochenftw/bulma-scss.git
+rm -rf bulma
+mv bulma-scss bulma`
+
+
 You will also need:
 
 - gulp `npm install gulp -g`
@@ -20,8 +28,8 @@ You will also need:
 
 There are 2 watch tasks to run:
 
-`gulp watch` - watches out for scss changes.
+`gulp default` - watches out for scss changes.
 
-`cd  js; watchify main.js -o 'uglifyjs -cm > bundle.min.js'` - watches for changes to the main js file.
+`cd  js; ./watch-js.sh` - watches for changes to the main js file, but you don't have to do this unless you are doing JS ES6 way
 
-You may need to install watchify globally: https://www.npmjs.com/package/watchify
+You may need to install watchify and uglifyjs globally: https://www.npmjs.com/package/watchify, https://www.npmjs.com/package/uglify-js
