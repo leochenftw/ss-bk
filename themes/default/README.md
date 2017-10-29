@@ -14,6 +14,7 @@ Make sure you instlal the required npm components
 `bower update`
 
 and don't forget to go to scss directory, and
+
 `git clone git@github.com:leochenftw/bulma-scss.git`
 
 `rm -rf bulma`
@@ -36,6 +37,5 @@ There are 2 watch tasks to run:
 
 You may need to install watchify and uglifyjs globally:
 
-https://www.npmjs.com/package/watchify,
-
-https://www.npmjs.com/package/uglify-js
+- https://www.npmjs.com/package/watchify
+- https://www.npmjs.com/package/uglify-js
