@@ -19,6 +19,7 @@
 		<% include Header %>
 
 		<main id="main">
+            <span class="icon"><i class="fa fa-eye"></i></span>
 			$Layout
 		</main>
 

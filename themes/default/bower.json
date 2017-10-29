@@ -2,7 +2,7 @@
   "name": "default",
   "version": "1.0.0",
   "authors": [
-    "Simon Winter <simon@saltedherring.com>"
+    "Leo Chen <leo@leochen.co.nz>"
   ],
   "private": true,
   "description": "Base SS dependencies",
@@ -33,7 +33,8 @@
     "fancySelect": "fancyselect#^1.1.0",
     "isotope": "^3.0.4",
     "isotope-packery": "^2.0.0",
-    "clndr": "^1.4.7"
+    "clndr": "^1.4.7",
+    "compass-h5bp": "^1.0.0"
   },
   "resolutions": {
     "d3": "~3.5.5",

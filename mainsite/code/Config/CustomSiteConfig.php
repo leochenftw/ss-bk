@@ -13,7 +13,8 @@ class CustomSiteConfig extends DataExtension
      * @var array
      */
     private static $has_one = [
-        'SiteLogo'                      =>  'Image'
+        'SiteLogo'                      =>  'Image',
+        'SiteFooterLogo'                =>  'Image'
     ];
 
 	public function updateCMSFields(FieldList $fields)
@@ -26,7 +27,16 @@ class CustomSiteConfig extends DataExtension
             SaltedUploader::create(
                 'SiteLogo',
                 'Website logo'
-            )->setCropperRatio('170/60'),
+            ), //->setCropperRatio(170/60),
+            'Title'
+        );
+
+        $fields->addFieldToTab(
+            'Root.Main',
+            SaltedUploader::create(
+                'SiteFooterLogo',
+                'Website footer logo'
+            )->setCropperRatio(170/60),
             'Title'
         );
 		$fields->addFieldToTab('Root.Main', new TextField('SiteVersion', 'Site Version'));
