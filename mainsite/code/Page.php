@@ -1,7 +1,8 @@
 <?php
 use SaltedHerring\Debuger;
 use SaltedHerring\Utilities;
-class Page extends SiteTree {
+class Page extends SiteTree
+{
 
     private static $db = array(
     );
@@ -9,7 +10,9 @@ class Page extends SiteTree {
     private static $has_one = array(
     );
 }
-class Page_Controller extends ContentController {
+
+class Page_Controller extends ContentController
+{
 
     /**
      * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -26,10 +29,10 @@ class Page_Controller extends ContentController {
      *
      * @var array
      */
-    private static $allowed_actions = array (
-    );
+    private static $allowed_actions = [];
 
-    public function init() {
+    public function init()
+    {
         parent::init();
 
         Requirements::block(THIRDPARTY_DIR . '/jquery/jquery.js');
@@ -64,11 +67,13 @@ class Page_Controller extends ContentController {
         }
     }
 
-    protected function getSessionID() {
+    protected function getSessionID()
+    {
         return session_id();
     }
 
-    protected function getHTTPProtocol() {
+    protected function getHTTPProtocol()
+    {
         $protocol = 'http';
         if (isset($_SERVER['SCRIPT_URI']) && substr($_SERVER['SCRIPT_URI'], 0, 5) == 'https') {
             $protocol = 'https';
@@ -78,11 +83,13 @@ class Page_Controller extends ContentController {
         return $protocol;
     }
 
-    protected function getCurrentPageURL() {
+    protected function getCurrentPageURL()
+    {
         return $this->getHTTPProtocol().'://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
     }
 
-    public function MetaTags($includeTitle = true) {
+    public function MetaTags($includeTitle = true)
+    {
         $tags = parent::MetaTags();
 
         /**
@@ -121,11 +128,13 @@ class Page_Controller extends ContentController {
         return $tags;
     }
 
-    public function getTheTitle() {
+    public function getTheTitle()
+    {
         return Convert::raw2xml(($this->MetaTitle) ? $this->MetaTitle : $this->Title);
     }
 
-    public function getBodyClass() {
+    public function getBodyClass()
+    {
         return Utilities::sanitiseClassName($this->singular_name(),'-');
     }
 }
