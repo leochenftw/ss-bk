@@ -31,6 +31,15 @@ class Page_Controller extends ContentController
      */
     private static $allowed_actions = [];
 
+    /**
+     * Defines extension names and parameters to be applied
+     * to this object upon construction.
+     * @var array
+     */
+    private static $extensions = [
+        'ControllerAjaxExtension'
+    ];
+
     public function init()
     {
         parent::init();
