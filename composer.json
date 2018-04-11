@@ -22,7 +22,7 @@
         "salted-herring/image-orientation-fixer": "~1.0.0",
         "salted-herring/salted-library": "dev-master",
         "thisisbd/silverstripe-maintenance-mode": "1.0.5",
-        "salted-herring/salted-cropper": "~1.0.1",
+        "salted-herring/salted-cropper": "~2.0.7",
         "sheadawson/silverstripe-linkable": "~1.3.7",
         "ntb/silverstripe-rest-api": "~1.0",
         "cocur/slugify": "~2.4",
