@@ -62,3 +62,6 @@ display_logic/
 linkable/
 silverstripe-rest-api/
 themes/default/package-lock.json
+betterbuttons/
+sortableuploadfield/
+techbringer-silverstripe-image-ajax-api/
