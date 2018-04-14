@@ -32,3 +32,7 @@ SeoConfig:
     ErrorPage: false
     RedirectorPage: false
     VirtualPage: false
+WWWSSL:
+  Enforced: false
+  IgnoreOrigins:
+    - 'sdk.leochen.co.nz'

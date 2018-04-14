@@ -6,6 +6,17 @@ $project = 'mainsite';
 global $database;
 $database = SS_DATABASE_NAME;
 
+if (Director::isLive() && Config::inst()->get('WWWSSL', 'Enforced')) {
+
+    Director::forceSSL();
+
+    $ignores =   Config::inst()->get('WWWSSL', 'IgnoreOrigins');
+
+    if (!in_array($_SERVER['HTTP_HOST'], $ignores)) {
+        Director::forceWWW();
+    }
+}
+
 Email::mailer()->setMessageEncoding('base64');
 
 // Use _ss_environment.php file for configuration
