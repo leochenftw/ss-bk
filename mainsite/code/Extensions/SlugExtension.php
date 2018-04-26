@@ -27,10 +27,14 @@ class SlugExtension extends DataExtension
         parent::onBeforeWrite();
         $slugify                =   new Slugify();
         if ($this->owner->hasField('Title')) {
+
             $title              =   $this->owner->Title;
-            $title_segments     =   Chinese::toPinyin($title, Pinyin::CONVERT_MODE_PINYIN);
-            if (!empty($title_segments['pinyin'][0])) {
-                $title          =   implode(' ', $title_segments['pinyin'][0]);
+            $chinese_check      =   preg_match("/\p{Han}+/u", $title);
+            if (!empty($chinese_check)) {
+                $title_segments =   Chinese::toPinyin($title, Pinyin::CONVERT_MODE_PINYIN);
+                if (!empty($title_segments['pinyin'][0])) {
+                    $title      =   implode(' ', $title_segments['pinyin'][0]);
+                }
             }
             $slug               =   $this->testSlug($slugify->slugify($title));
             $this->owner->Slug  = $slug;
